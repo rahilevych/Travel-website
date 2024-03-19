@@ -1,0 +1,51 @@
+.trends {
+  background-color: rgb(244, 248, 255);
+  width: 100%;
+  height: 100vh;
+  margin: 5rem 0;
+}
+
+.trends__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem;
+}
+.trends__content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+.trends__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: white;
+  padding: 2rem;
+}
+.trends__cover {
+}
+.trends__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.tremds__name {
+}
+.trends__price {
+}
+.trends__descr {
+}
+.btn {
+}
+.trends__btn {
+}

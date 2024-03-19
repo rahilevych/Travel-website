@@ -1,0 +1,7 @@
+@import './header.css';
+@import './trends.css';
+@import './footer.css';
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
