@@ -16,37 +16,44 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="container">
-          <nav>
-            <div class="navigation">
-              <div class="logo">
-                <img src="../img/logo.png" alt="logo" />
-                <p>Pages</p>
+        <div class="header__home">
+          <div class="container header__container">
+            <nav>
+              <div class="navigation">
+                <div class="navigation__content">
+                  <div class="logo">
+                    <a href="./index.html"><i class="ph ph-mountains"></i></a>
+                    <p>adventure horizon</p>
+                  </div>
+                  <ul class="navigation__list">
+                    <li><a href="./content.html" class="link">Trips</a></li>
+                    <li><a href="./contact.html" class="link">Contact</a></li>
+                    <li><button class="btn header__btn">login</button></li>
+                    <li>
+                      <a href="./registration.html" class="btn header__btn"
+                        >sign up</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <ul class="navigation__list">
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Books</a></li>
-                <li><a href="/">Registration</a></li>
-                <li><a href="/">Contact</a></li>
-                <li><button class="btn header__login">login</button></li>
-                <li><button class="btn header__signup">sign up</button></li>
-              </ul>
-            </div>
-          </nav>
-          <div class="header__content">
-            <div class="header__info">
-              <h1>Books are uniquely portable magic</h1>
-              <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form.
-              </p>
-              <div class="header__buttons">
-                <button class="btn">Buy</button>
-                <button class="btn">Read demo</button>
+            </nav>
+            <div class="header__content">
+              <div class="header__info">
+                <h1>
+                  Unlock the beauty of travel where every destination holds a
+                  story
+                </h1>
+                <p>
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form.
+                </p>
+                <div class="header__buttons">
+                  <button class="btn">Book trip</button>
+                  <a href="./content.html" class="btn">Explore all trips</a>
+                </div>
               </div>
-            </div>
-            <div class="header__img">
-              <img src="../img/cover.png" alt="book" />
             </div>
           </div>
         </div>
@@ -54,49 +61,103 @@
       <main>
         <section class="trends">
           <div class="container trends__container">
-            <h2>Trends</h2>
+            <h2 class="title">Most popular destinations</h2>
             <div class="trends__content">
               <div class="trends__item">
                 <div class="trends__cover">
-                  <img src="../img/cover.png" alt="book" />
+                  <img src="../img/italy.jpg" alt="italy" />
                 </div>
-                <div class="trends__info">
-                  <p class="tremds__name">The Dark Light</p>
-                  <div class="trends__price">23$</div>
+                <div class="trends__context">
+                  <div class="trends__info">
+                    <p class="trends__name">Italy</p>
+                    <p class="trends__price">23$</p>
+                  </div>
+                  <div class="trends__descr">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Cumque dolor fugit rem facere error ea, impedit numquam
+                  </div>
+                  <button class="btn trends__btn">Book</button>
                 </div>
-                <div class="trends__descr">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Cumque dolor fugit rem facere error ea, impedit numquam
-                </div>
-                <button class="btn trends__btn">Buy</button>
               </div>
               <div class="trends__item">
                 <div class="trends__cover">
-                  <img src="../img/cover.png" alt="book" />
+                  <img src="../img/spain.jpg" alt="spain" />
                 </div>
-                <div class="trends__info">
-                  <p class="tremds__name">The Dark Light</p>
-                  <div class="trends__price">23$</div>
+                <div class="trends__context">
+                  <div class="trends__info">
+                    <p class="trends__name">Spain</p>
+                    <p class="trends__price">23$</p>
+                  </div>
+                  <div class="trends__descr">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Cumque dolor fugit rem facere error ea, impedit numquam
+                  </div>
+                  <button class="btn trends__btn">Book</button>
                 </div>
-                <div class="trends__descr">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Cumque dolor fugit rem facere error ea, impedit numquam
-                </div>
-                <button class="btn trends__btn">Buy</button>
               </div>
               <div class="trends__item">
                 <div class="trends__cover">
-                  <img src="../img/cover.png" alt="book" />
+                  <img src="../img/france.jpg" alt="book" />
                 </div>
-                <div class="trends__info">
-                  <p class="tremds__name">The Dark Light</p>
-                  <div class="trends__price">23$</div>
+                <div class="trends__context">
+                  <div class="trends__info">
+                    <p class="trends__name">France</p>
+                    <p class="trends__price">23$</p>
+                  </div>
+                  <div class="trends__descr">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Cumque dolor fugit rem facere error ea, impedit numquam
+                  </div>
+                  <button class="btn trends__btn">Book</button>
                 </div>
-                <div class="trends__descr">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Cumque dolor fugit rem facere error ea, impedit numquam
+              </div>
+              <div class="trends__item">
+                <div class="trends__cover">
+                  <img src="../img/germany.jpg" alt="germany" />
                 </div>
-                <button class="btn trends__btn">Buy</button>
+                <div class="trends__context">
+                  <div class="trends__info">
+                    <p class="tremds__name">Germany</p>
+                    <div class="trends__price">23$</div>
+                  </div>
+                  <div class="trends__descr">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Cumque dolor fugit rem facere error ea, impedit numquam
+                  </div>
+                  <button class="btn trends__btn">Book</button>
+                </div>
+              </div>
+              <div class="trends__item">
+                <div class="trends__cover">
+                  <img src="../img/france.jpg" alt="book" />
+                </div>
+                <div class="trends__context">
+                  <div class="trends__info">
+                    <p class="trends__name">France</p>
+                    <p class="trends__price">23$</p>
+                  </div>
+                  <div class="trends__descr">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Cumque dolor fugit rem facere error ea, impedit numquam
+                  </div>
+                  <button class="btn trends__btn">Book</button>
+                </div>
+              </div>
+              <div class="trends__item">
+                <div class="trends__cover">
+                  <img src="../img/france.jpg" alt="book" />
+                </div>
+                <div class="trends__context">
+                  <div class="trends__info">
+                    <p class="trends__name">France</p>
+                    <p class="trends__price">23$</p>
+                  </div>
+                  <div class="trends__descr">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Cumque dolor fugit rem facere error ea, impedit numquam
+                  </div>
+                  <button class="btn trends__btn">Book</button>
+                </div>
               </div>
             </div>
           </div>
@@ -105,28 +166,38 @@
       <footer>
         <div class="container footer__container">
           <div class="footer__links">
-            <div class="logo">
-              <img src="../img/logo.png" alt="logo" />
-              <p>Pages</p>
+            <div class="logo footer__logo">
+              <a href="./index.html"><i class="ph ph-mountains"></i></a>
+              <p>adventure horizon</p>
             </div>
             <ul class="footer__pages">
-              <li><a href="">Books</a></li>
-              <li><a href="">Registration</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="" class="link">Trips</a></li>
+              <li>
+                <a href="./registration.html" class="link">Registration</a>
+              </li>
+              <li><a href="./contact.html" class="link">Contact</a></li>
             </ul>
           </div>
           <ul class="footer__icons">
             <li>
-              <a href=""><i class="ph ph-instagram-logo"></i></a>
+              <a href="https://www.instagram.com/" class="link"
+                ><i class="ph ph-instagram-logo"></i
+              ></a>
             </li>
             <li>
-              <a href=""><i class="ph ph-facebook-logo"></i></a>
+              <a href="https://www.facebook.com/" class="link"
+                ><i class="ph ph-facebook-logo"></i
+              ></a>
             </li>
             <li>
-              <a href=""><i class="ph ph-twitter-logo"></i></a>
+              <a href="https://twitter.com/" class="link"
+                ><i class="ph ph-twitter-logo"></i
+              ></a>
             </li>
             <li>
-              <a href=""><i class="ph ph-youtube-logo"></i></a>
+              <a href="https://www.youtube.com/" class="link"
+                ><i class="ph ph-youtube-logo"></i
+              ></a>
             </li>
           </ul>
         </div>

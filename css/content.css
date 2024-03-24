@@ -1,0 +1,85 @@
+.navigation__cont {
+  background-color: rgb(22, 35, 51);
+}
+.trips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 7rem 0;
+  gap: 3rem;
+}
+
+.trips__search {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: 3rem;
+  width: 25rem;
+  border: 2px solid rgb(22, 35, 51);
+}
+.trips__search > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(249, 149, 30);
+  border: none;
+  width: 15%;
+}
+.trips__search > input {
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  color: rgb(22, 35, 51);
+}
+.trips__search > button i {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.trips__list {
+  width: 100%;
+}
+.trips__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.trips__table th,
+td {
+  font-family: Inter;
+  font-size: 1.25rem;
+  width: auto;
+  height: 5rem;
+  color: rgb(27, 55, 100);
+  text-align: left;
+  padding: 0 2rem;
+}
+.trips__table th {
+  background-color: rgba(22, 35, 51);
+
+  font-weight: 600;
+  color: rgb(249, 149, 30);
+  width: auto;
+}
+.trips__table td {
+  font-weight: 400;
+  padding: 0 1rem;
+}
+.trips__table tr:nth-child(odd) {
+  background-color: rgb(244, 248, 255);
+}
+@media only screen and (max-width: 768px) {
+  .trips__table th,
+  td {
+    padding: 0.25;
+  }
+  .trips__list {
+    overflow: auto;
+  }
+  .trips__search {
+    width: 100%;
+  }
+}
