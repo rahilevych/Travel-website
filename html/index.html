@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/null.css" />
     <link rel="stylesheet" href="../css/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@100..900&display=swap"
       rel="stylesheet" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <title>Document</title>
+    <title>Adventure Horizone</title>
   </head>
   <body>
     <div class="wrapper">
@@ -20,21 +21,55 @@
           <div class="container header__container">
             <nav>
               <div class="navigation">
-                <div class="navigation__content">
-                  <div class="logo">
-                    <a href="./index.html"><i class="ph ph-mountains"></i></a>
-                    <p>adventure horizon</p>
-                  </div>
+                <div class="navigation__info">
+                  <a href="./index.html"
+                    ><div class="logo">
+                      <i class="ph ph-mountains"></i>
+                      <p>adventure horizon</p>
+                    </div></a
+                  >
                   <ul class="navigation__list">
+                    <li><a href="./index.html" class="link">Home</a></li>
                     <li><a href="./content.html" class="link">Trips</a></li>
                     <li><a href="./contact.html" class="link">Contact</a></li>
-                    <li><button class="btn header__btn">login</button></li>
                     <li>
-                      <a href="./registration.html" class="btn header__btn"
-                        >sign up</a
-                      >
+                      <input type="checkbox" />
+                      <a class="link"><i class="ph ph-user-circle"></i></a>
+                      <ul class="navigation__sublist">
+                        <li>
+                          <a href="./registration.html" class="btn">Sign up</a>
+                        </li>
+                        <li><a class="btn">login</a></li>
+                      </ul>
                     </li>
                   </ul>
+                </div>
+              </div>
+              <div class="navigation__hamburger">
+                <div class="navigation__info">
+                  <a href="./index.html"
+                    ><div class="logo">
+                      <i class="ph ph-mountains"></i>
+                      <p>adventure horizon</p>
+                    </div></a
+                  >
+                  <div class="navigation__menu-sm">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="navigation__burger-list">
+                      <li><a href="./index.html" class="link">Home</a></li>
+                      <li><a href="./content.html" class="link">Trips</a></li>
+                      <li><a href="./contact.html" class="link">Contact</a></li>
+                      <li><a class="btn header__btn">login</a></li>
+                      <li>
+                        <a href="./registration.html" class="btn header__btn"
+                          >sign up</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </nav>
@@ -44,14 +79,9 @@
                   Unlock the beauty of travel where every destination holds a
                   story
                 </h1>
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form.
-                </p>
                 <div class="header__buttons">
-                  <button class="btn">Book trip</button>
-                  <a href="./content.html" class="btn">Explore all trips</a>
+                  <a class="btn">Book trip</a>
+                  <a href="./content.html" class="btn">All trips</a>
                 </div>
               </div>
             </div>
@@ -76,7 +106,7 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Cumque dolor fugit rem facere error ea, impedit numquam
                   </div>
-                  <button class="btn trends__btn">Book</button>
+                  <button class="btn trends__btn btn-dark">Book</button>
                 </div>
               </div>
               <div class="trends__item">
@@ -92,7 +122,7 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Cumque dolor fugit rem facere error ea, impedit numquam
                   </div>
-                  <button class="btn trends__btn">Book</button>
+                  <button class="btn trends__btn btn-dark">Book</button>
                 </div>
               </div>
               <div class="trends__item">
@@ -108,7 +138,7 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Cumque dolor fugit rem facere error ea, impedit numquam
                   </div>
-                  <button class="btn trends__btn">Book</button>
+                  <button class="btn trends__btn btn-dark">Book</button>
                 </div>
               </div>
               <div class="trends__item">
@@ -118,45 +148,45 @@
                 <div class="trends__context">
                   <div class="trends__info">
                     <p class="tremds__name">Germany</p>
-                    <div class="trends__price">23$</div>
-                  </div>
-                  <div class="trends__descr">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Cumque dolor fugit rem facere error ea, impedit numquam
-                  </div>
-                  <button class="btn trends__btn">Book</button>
-                </div>
-              </div>
-              <div class="trends__item">
-                <div class="trends__cover">
-                  <img src="../img/france.jpg" alt="book" />
-                </div>
-                <div class="trends__context">
-                  <div class="trends__info">
-                    <p class="trends__name">France</p>
                     <p class="trends__price">23$</p>
                   </div>
                   <div class="trends__descr">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Cumque dolor fugit rem facere error ea, impedit numquam
                   </div>
-                  <button class="btn trends__btn">Book</button>
+                  <button class="btn trends__btn btn-dark">Book</button>
                 </div>
               </div>
               <div class="trends__item">
                 <div class="trends__cover">
-                  <img src="../img/france.jpg" alt="book" />
+                  <img src="../img/bali.jpg" alt="bali" />
                 </div>
                 <div class="trends__context">
                   <div class="trends__info">
-                    <p class="trends__name">France</p>
+                    <p class="trends__name">Bali</p>
                     <p class="trends__price">23$</p>
                   </div>
                   <div class="trends__descr">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Cumque dolor fugit rem facere error ea, impedit numquam
                   </div>
-                  <button class="btn trends__btn">Book</button>
+                  <button class="btn trends__btn btn-dark">Book</button>
+                </div>
+              </div>
+              <div class="trends__item">
+                <div class="trends__cover">
+                  <img src="../img/india.jpg" alt="india" />
+                </div>
+                <div class="trends__context">
+                  <div class="trends__info">
+                    <p class="trends__name">India</p>
+                    <p class="trends__price">23$</p>
+                  </div>
+                  <div class="trends__descr">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Cumque dolor fugit rem facere error ea, impedit numquam
+                  </div>
+                  <button class="btn trends__btn btn-dark">Book</button>
                 </div>
               </div>
             </div>

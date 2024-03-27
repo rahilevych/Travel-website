@@ -5,41 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/null.css" />
     <link rel="stylesheet" href="../css/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@100..900&display=swap"
       rel="stylesheet" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Document</title>
   </head>
   <body>
     <header>
-      <div class="header__registration">
-        <div class="container">
-          <nav>
-            <div class="navigation navigation__cont">
-              <div class="navigation__content">
-                <a href="./index.html"
-                  ><div class="logo">
-                    <i class="ph ph-mountains"></i>
-                    <p>adventure horizon</p>
-                  </div></a
-                >
-                <ul class="navigation__list">
-                  <li><a class="link" href="./index.html">Home</a></li>
-                  <li><a class="link" href="./content.html">Trips</a></li>
-                  <li><a class="link" href="./contact.html">Contact</a></li>
-                  <li><button class="btn header__login">login</button></li>
-                  <li>
-                    <a href="./registration.html" class="btn header__signup"
-                      >sign up</a
-                    >
-                  </li>
-                </ul>
+      <div class="wrapper">
+        <div class="header__content">
+          <div class="container">
+            <nav>
+              <div class="navigation navigation__content">
+                <div class="navigation__info">
+                  <a href="./index.html"
+                    ><div class="logo">
+                      <i class="ph ph-mountains"></i>
+                      <p>adventure horizon</p>
+                    </div></a
+                  >
+                  <ul class="navigation__list">
+                    <li><a href="./index.html" class="link">Home</a></li>
+                    <li><a href="./content.html" class="link">Trips</a></li>
+                    <li><a href="./contact.html" class="link">Contact</a></li>
+                    <li>
+                      <input type="checkbox" />
+                      <a class="link"><i class="ph ph-user-circle"></i></a>
+                      <ul class="navigation__sublist">
+                        <li>
+                          <a href="./registration.html" class="btn btn-dark"
+                            >Sign up</a
+                          >
+                        </li>
+                        <li><a class="btn btn-dark">login</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </nav>
+              <div class="navigation__hamburger">
+                <div class="navigation__info">
+                  <a href="./index.html"
+                    ><div class="logo">
+                      <i class="ph ph-mountains"></i>
+                      <p>adventure horizon</p>
+                    </div></a
+                  >
+                  <div class="navigation__menu-sm">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="navigation__burger-list">
+                      <li><a href="./index.html" class="link">Home</a></li>
+                      <li><a href="./content.html" class="link">Trips</a></li>
+                      <li><a href="./contact.html" class="link">Contact</a></li>
+                      <li><a class="btn header__btn">login</a></li>
+                      <li>
+                        <a href="./registration.html" class="btn header__btn"
+                          >sign up</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -55,7 +91,7 @@
             <table class="trips__table">
               <thead>
                 <tr>
-                  <th>№</th>
+                  <th></th>
                   <th>Destination</th>
                   <th>Duration</th>
                   <th>Accomodation</th>
@@ -64,112 +100,112 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>1</td>
+                  <td><img src="..//img/germany.jpg" alt="germany" /></td>
                   <td>Berlin</td>
                   <td>6</td>
                   <td>Hotel</td>
                   <td>500$</td>
                 </tr>
                 <tr>
-                  <td>2</td>
+                  <td><img src="../img/france.jpg" alt="france" /></td>
                   <td>Paris</td>
                   <td>5</td>
                   <td>Apartment</td>
                   <td>600$</td>
                 </tr>
                 <tr>
-                  <td>3</td>
+                  <td><img src="../img/spain.jpg" alt="" /></td>
                   <td>Madrid</td>
                   <td>5</td>
                   <td>Hotel</td>
                   <td>650$</td>
                 </tr>
                 <tr>
-                  <td>4</td>
+                  <td><img src="../img/italy.jpg" alt="" /></td>
                   <td>Rome</td>
                   <td>7</td>
                   <td>Apartment</td>
                   <td>700$</td>
                 </tr>
                 <tr>
-                  <td>5</td>
-                  <td>Berlin</td>
+                  <td><img src="../img/bali.jpg" alt="" /></td>
+                  <td>Bali</td>
                   <td>6</td>
                   <td>Hotel</td>
                   <td>500$</td>
                 </tr>
                 <tr>
-                  <td>6</td>
+                  <td><img src="../img/india.jpg" alt="" /></td>
                   <td>Paris</td>
                   <td>5</td>
                   <td>Apartment</td>
                   <td>600$</td>
                 </tr>
                 <tr>
-                  <td>7</td>
+                  <td><img src="../img/france.jpg" alt="" /></td>
                   <td>Madrid</td>
                   <td>5</td>
                   <td>Hotel</td>
                   <td>650$</td>
                 </tr>
                 <tr>
-                  <td>8</td>
+                  <td><img src="../img/india.jpg" alt="" /></td>
                   <td>Rome</td>
                   <td>7</td>
                   <td>Apartment</td>
                   <td>700$</td>
                 </tr>
                 <tr>
-                  <td>9</td>
+                  <td><img src="../img/bali.jpg" alt="" /></td>
                   <td>Berlin</td>
                   <td>6</td>
                   <td>Hotel</td>
                   <td>500$</td>
                 </tr>
                 <tr>
-                  <td>10</td>
+                  <td><img src="../img/spain.jpg" alt="" /></td>
                   <td>Paris</td>
                   <td>5</td>
                   <td>Apartment</td>
                   <td>600$</td>
                 </tr>
                 <tr>
-                  <td>11</td>
+                  <td><img src="../img/bali.jpg" alt="" /></td>
                   <td>Madrid</td>
                   <td>5</td>
                   <td>Hotel</td>
                   <td>650$</td>
                 </tr>
                 <tr>
-                  <td>12</td>
+                  <td><img src="../img/india.jpg" alt="" /></td>
                   <td>Rome</td>
                   <td>7</td>
                   <td>Apartment</td>
                   <td>700$</td>
                 </tr>
                 <tr>
-                  <td>13</td>
+                  <td><img src="../img/spain.jpg" alt="" /></td>
                   <td>Berlin</td>
                   <td>6</td>
                   <td>Hotel</td>
                   <td>500$</td>
                 </tr>
                 <tr>
-                  <td>14</td>
+                  <td><img src="../img/italy.jpg" alt="" /></td>
                   <td>Paris</td>
                   <td>5</td>
                   <td>Apartment</td>
                   <td>600$</td>
                 </tr>
                 <tr>
-                  <td>15</td>
+                  <td><img src="../img/maldievs.jpg" alt="" /></td>
                   <td>Madrid</td>
                   <td>5</td>
                   <td>Hotel</td>
                   <td>650$</td>
                 </tr>
                 <tr>
-                  <td>16</td>
+                  <td><img src="../img/spain.jpg" alt="" /></td>
                   <td>Rome</td>
                   <td>7</td>
                   <td>Apartment</td>

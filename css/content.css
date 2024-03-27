@@ -1,5 +1,9 @@
-.navigation__cont {
-  background-color: rgb(22, 35, 51);
+@import './header.css';
+.navigation__info {
+  background-color: var(--bg-color);
+}
+.navigation__content ul li:nth-child(2) {
+  border-bottom: 1px solid var(--main-font-light);
 }
 .trips {
   display: flex;
@@ -7,7 +11,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 7rem 0;
+  padding: 10rem 0;
   gap: 3rem;
 }
 
@@ -17,13 +21,13 @@
   background-color: white;
   height: 3rem;
   width: 25rem;
-  border: 2px solid rgb(22, 35, 51);
+  border: 2px solid var(--bg-color);
 }
 .trips__search > button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(249, 149, 30);
+  background: var(--bg-color);
   border: none;
   width: 15%;
 }
@@ -33,10 +37,10 @@
   width: 100%;
   padding: 1rem;
   font-size: 1rem;
-  color: rgb(22, 35, 51);
+  color: var(--main-font-dark);
 }
 .trips__search > button i {
-  color: white;
+  color: var(--main-font-light);
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -49,27 +53,35 @@
 }
 .trips__table th,
 td {
-  font-family: Inter;
+  font-family: var(--main-font);
   font-size: 1.25rem;
   width: auto;
   height: 5rem;
-  color: rgb(27, 55, 100);
+  color: var(--main-font-dark);
   text-align: left;
   padding: 0 2rem;
 }
 .trips__table th {
-  background-color: rgba(22, 35, 51);
-
+  background-color: #eefafc;
   font-weight: 600;
-  color: rgb(249, 149, 30);
+  color: var(--main-font-dark);
   width: auto;
 }
-.trips__table td {
+.trips__table td,
+th {
   font-weight: 400;
   padding: 0 1rem;
 }
-.trips__table tr:nth-child(odd) {
-  background-color: rgb(244, 248, 255);
+.trips__table td img {
+  width: 4rem;
+  height: 4rem;
+  overflow: hidden;
+  border: 2px solid var(--border-color);
+  margin: 1rem auto;
+  border-radius: 50%;
+}
+.trips__table tr:nth-child(even) {
+  background-color: #eefafc;
 }
 @media only screen and (max-width: 768px) {
   .trips__table th,

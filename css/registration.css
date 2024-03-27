@@ -1,25 +1,25 @@
+@import './header.css';
 .registration {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 7rem 0;
+  padding: 10rem 0;
 }
 .navigation__registration {
-  background-color: rgb(22, 35, 51);
-}
-.registration__steps {
-  width: 100%;
-  text-align: start;
-  font-size: 2rem;
-  font-family: Inter;
-  font-weight: 800;
-  color: rgb(22, 35, 51);
-  margin: 1rem 0;
+  background-color: var(--bg-color);
 }
 
 .registration__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+}
+.registration__personal {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -28,6 +28,10 @@
   flex-wrap: wrap;
   width: 100%;
   gap: 2rem;
+  padding: 6rem 0;
+  padding: 3rem;
+  border: 2px dashed var(--border-color);
+  margin-top: 2rem;
 }
 
 .registration__item {
@@ -36,67 +40,139 @@
   gap: 0.25rem;
   width: 25rem;
   height: 6rem;
-  margin-top: 2rem;
 }
 .registration__item label {
   margin-bottom: 1rem;
-  font-family: Inter;
+  font-family: var(--main-font);
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 600;
+  color: var(--bg-color);
 }
 .registration__item input {
-  background-color: white;
+  background-color: var(--bg-items);
   border: 1px solid rgb(220, 225, 233);
   width: 100%;
   height: 100%;
-  font-family: Inter;
+  font-family: var(--main-font);
   font-size: 1.25rem;
   padding: 0 1.25rem;
   font-weight: 400;
 }
+.registration__item input::placeholder {
+  font-family: var(--main-font);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: rgb(150, 154, 160);
+}
 .registration__item input:focus {
-  border-color: rgb(220, 225, 233);
+  border-color: var(--border-color);
+}
+.registration__additional {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 3rem;
+  border: 2px dashed var(--border-color);
+}
+.registration__languages > p,
+.registration__countries > p,
+.registration__preferences > p {
+  margin-bottom: 1rem;
+  font-family: var(--main-font);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--bg-color);
+}
+
+.registration__countries {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.checkbox {
+  position: relative;
+  display: block;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 45px;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--bg-color);
+  cursor: pointer;
+}
+.checkbox input {
+  position: absolute;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+.check {
+  position: absolute;
+
+  height: 2rem;
+  width: 2rem;
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transition: 0.1s ease;
+}
+.checkbox:hover input ~ .check {
+  border-color: transparent;
+  background-color: var(--bg-color);
+}
+.checkbox input:checked ~ .check {
+  background-color: var(--main-font-dark);
+  border-color: transparent;
+}
+.check::after {
+  position: absolute;
+  content: '';
+  width: 0.4rem;
+  height: 0.75rem;
+  border: solid var(--bg-color-light);
+  border-width: 0 3px 3px 0;
+  left: 0.7rem;
+  top: 0.3rem;
+  transform: rotate(45deg);
 }
 .registration__preferences {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
-  margin-top: 2rem;
-  gap: 5rem;
-  width: 100%;
-}
-.registration__questions {
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 5rem;
-  width: 100%;
-}
-.registration__preferences fieldset {
-  height: auto;
-  width: auto;
-  font-family: Inter;
-  font-size: 1.25rem;
-  padding: 1.25rem;
-  font-weight: 400;
 }
 
-.registration__preferences fieldset input {
-  width: 2rem;
-  height: 2rem;
-  margin-right: 1rem;
+.registration__preferences select {
+  width: 100%;
+  height: 2.5rem;
+  margin-left: 0.25rem;
+  padding: 0.25rem;
+  font-family: var(--main-font);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--bg-color);
+}
+.registration__preferences select > option:hover {
+  background-color: var(--main-font-light);
+  color: var(--bg-items);
   cursor: pointer;
 }
 
-.registration__preferences fieldset label {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
 .registration__btn {
-  margin: 0 auto;
+  width: 15rem;
+}
+@media only screen and (max-width: 768px) {
+  .registration__additional {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 auto;
+  }
 }

@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/null.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@100..900&display=swap"
       rel="stylesheet" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet" />
+
     <title>Document</title>
   </head>
   <body>
@@ -22,8 +21,8 @@
         <div class="header__registration">
           <div class="container">
             <nav>
-              <div class="navigation navigation__registration">
-                <div class="navigation__content">
+              <div class="navigation">
+                <div class="navigation__info">
                   <a href="./index.html"
                     ><div class="logo">
                       <i class="ph ph-mountains"></i>
@@ -31,16 +30,49 @@
                     </div></a
                   >
                   <ul class="navigation__list">
-                    <li><a class="link" href="./index.html">Home</a></li>
-                    <li><a class="link" href="./content.html">Trips</a></li>
-                    <li><a class="link" href="./contact.html">Contact</a></li>
-                    <li><button class="btn header__login">login</button></li>
+                    <li><a href="./index.html" class="link">Home</a></li>
+                    <li><a href="./content.html" class="link">Trips</a></li>
+                    <li><a href="./contact.html" class="link">Contact</a></li>
                     <li>
-                      <a href="./registration.html" class="btn header__signup"
-                        >sign up</a
-                      >
+                      <input type="checkbox" />
+                      <a class="link"><i class="ph ph-user-circle"></i></a>
+                      <ul class="navigation__sublist">
+                        <li>
+                          <a href="./registration.html" class="btn btn-dark"
+                            >Sign up</a
+                          >
+                        </li>
+                        <li><a class="btn btn-dark">login</a></li>
+                      </ul>
                     </li>
                   </ul>
+                </div>
+              </div>
+              <div class="navigation__hamburger">
+                <div class="navigation__info">
+                  <a href="./index.html"
+                    ><div class="logo">
+                      <i class="ph ph-mountains"></i>
+                      <p>adventure horizon</p>
+                    </div></a
+                  >
+                  <div class="navigation__menu-sm">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="navigation__burger-list">
+                      <li><a href="./index.html" class="link">Home</a></li>
+                      <li><a href="./content.html" class="link">Trips</a></li>
+                      <li><a href="./contact.html" class="link">Contact</a></li>
+                      <li><a class="btn header__btn">login</a></li>
+                      <li>
+                        <a href="./registration.html" class="btn header__btn"
+                          >sign up</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </nav>
@@ -51,167 +83,153 @@
         <div class="container">
           <section class="registration">
             <h2 class="title">Registration</h2>
-            <p class="registration__steps">Step 1: Personal info</p>
             <form action="" class="registration__form">
-              <div class="registration__item">
-                <label for="name">Name</label>
-                <input type="text" class="registration__name" name="name" />
+              <div class="registration__personal">
+                <div class="registration__item">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    class="registration__name"
+                    name="name"
+                    required
+                    placeholder="Name" />
+                </div>
+                <div class="registration__item">
+                  <label for="surname">Surname</label>
+                  <input
+                    type="text"
+                    class="registration__surname"
+                    name="surname"
+                    placeholder="Surname"
+                    required />
+                </div>
+                <div class="registration__item">
+                  <label for="date">Date of birth</label>
+                  <input
+                    type="date"
+                    name="date"
+                    placeholder="Date of birth"
+                    required />
+                </div>
+                <div class="registration__item">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" placeholder="Email" />
+                </div>
+                <div class="registration__item">
+                  <label for="phone">Phone</label>
+                  <input type="tel" name="phone" phone />
+                </div>
+                <div class="registration__item">
+                  <label for="country">Country</label>
+                  <input
+                    type="text"
+                    name="country"
+                    required
+                    placeholder="Country" />
+                </div>
+                <div class="registration__item" required>
+                  <label for="city">City</label>
+                  <input type="text" name="city" placeholder="City" />
+                </div>
+                <div class="registration__item">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Password" />
+                </div>
+                <div class="registration__item">
+                  <label for="confirmation">Password confirmation</label>
+                  <input
+                    type="password"
+                    name="confirmation"
+                    placeholder="Password confirmation" />
+                </div>
               </div>
-              <div class="registration__item">
-                <label for="surname">Surname</label>
-                <input
-                  type="text"
-                  class="registration__surname"
-                  name="surname" />
-              </div>
-              <div class="registration__item">
-                <label for="date">Date of birth</label>
-                <input type="date" name="date" />
-              </div>
-              <div class="registration__item">
-                <label for="email">Email</label>
-                <input type="email" name="email" />
-              </div>
-              <div class="registration__item">
-                <label for="phone">Phone</label>
-                <input type="tel" name="phone" />
-              </div>
-              <div class="registration__item">
-                <label for="password">Password</label>
-                <input type="password" name="password" />
-              </div>
-            </form>
-            <p class="registration__steps">Step 2: Your trip preferences</p>
-            <form action="" class="registration__preferences">
-              <div class="registration__questions">
-                <fieldset>
-                  <legend>Which country do you prefer?</legend>
-                  <label
-                    for="countries
-                  "
-                    ><input
+              <div class="registration__additional">
+                <div class="registration__countries">
+                  <p>What countries do you prefer?</p>
+                  <label class="checkbox"
+                    >European<input type="checkbox" name="countries" /><span
+                      class="check"></span
+                  ></label>
+                  <label class="checkbox"
+                    >African<input type="checkbox" name="countries" /><span
+                      class="check"></span
+                  ></label>
+                  <label class="checkbox"
+                    >Asian<input type="checkbox" name="countries" /><span
+                      class="check"></span
+                  ></label>
+                  <label class="checkbox"
+                    >South American<input
                       type="checkbox"
-                      name="categories"
-                      id="countries
-                      " />European</label
-                  >
-                  <label
-                    for="countries
-                  "
-                    ><input
+                      name="countries" /><span class="check"></span
+                  ></label>
+                  <label class="checkbox"
+                    >North American<input
                       type="checkbox"
-                      name="categories"
-                      id="countries
-                      " />African
-                  </label>
-                  <label
-                    for="countries
-                  "
-                    ><input
+                      name="countries" /><span class="check"></span
+                  ></label>
+                  <label class="checkbox"
+                    >Oceanian<input type="checkbox" name="countries" /><span
+                      class="check"></span
+                  ></label>
+                  <label class="checkbox"
+                    >Middle Eastern<input
                       type="checkbox"
-                      name="categories"
-                      id="countries
-                      " />Asian
-                  </label>
-                  <label
-                    for="countries
-                  "
-                    ><input
-                      type="checkbox"
-                      name="categories"
-                      id="countries
-                      " />South American
-                  </label>
-                  <label
-                    for="countries
-                  "
-                    ><input
-                      type="checkbox"
-                      name="categories"
-                      id="countries
-                      " />North American
-                  </label>
-                  <label
-                    for="countries
-                  "
-                    ><input
-                      type="checkbox"
-                      name="categories"
-                      id="countries
-                      " />Oceanian
-                  </label>
-                  <label
-                    for="countries
-                  "
-                    ><input
-                      type="checkbox"
-                      name="categories"
-                      id="countries
-                      " />Middle Eastern
-                  </label>
-                  <label
-                    for="countries
-                  "
-                    ><input
-                      type="checkbox"
-                      name="categories"
-                      id="countries
-                      " />Caribbean
-                  </label>
-                  <label for="eng"
-                    ><input type="checkbox" name="countries" id="eng" />Central
-                    American
-                  </label>
-                </fieldset>
-
-                <fieldset>
-                  <legend>What languages do you do you speak?</legend>
-                  <label for="eng"
-                    ><input type="checkbox" name="languages" id="eng" />English
-                  </label>
-                  <label for="eng"
-                    ><input type="checkbox" name="languages" id="eng" />Spanish
-                  </label>
-                  <label for="eng"
-                    ><input type="checkbox" name="languages" id="eng" />French
-                  </label>
-                  <label for="eng"
-                    ><input type="checkbox" name="languages" id="eng" />Italian
-                  </label>
-                  <label for="eng"
-                    ><input type="checkbox" name="languages" id="eng" />German
-                  </label>
-                  <label for="eng"
-                    ><input type="checkbox" name="languages" id="eng" />Hindi
-                  </label>
-                  <label for="eng"
-                    ><input type="checkbox" name="languages" id="eng" />Arabic
-                  </label>
-                </fieldset>
-                <fieldset>
-                  <legend>
-                    What is your preference for traveling: solo or in a group
-                  </legend>
-                  <label>
-                    <input type="radio" name="preference" value="solo" />
-                    Group </label
-                  ><br />
-                  <label>
-                    <input type="radio" name="preference" value="group" />
-                    Alone </label
-                  ><br />
-                </fieldset>
-                <fieldset>
-                  <legend for="travel-preference">
-                    What is your travel preference?
-                  </legend>
-                  <select id="travel-preference" name="travel-preference">
+                      name="countries" /><span class="check"></span
+                  ></label>
+                  <label class="checkbox"
+                    >Caribbean<input type="checkbox" name="countries" /><span
+                      class="check"></span
+                  ></label>
+                  <label class="checkbox"
+                    >Central American
+                    <input type="checkbox" name="countries" /><span
+                      class="check"></span
+                  ></label>
+                </div>
+                <div class="registration__languages">
+                  <p>What languages do you do you speak?</p>
+                  <label class="checkbox"
+                    >English<input type="checkbox" name="languages" /><span
+                      class="check"></span
+                  ></label>
+                  <label class="checkbox"
+                    >Spanish<input type="checkbox" name="languages" /><span
+                      class="check"></span
+                  ></label>
+                  <label class="checkbox"
+                    >French<input type="checkbox" name="languages" /><span
+                      class="check"></span
+                  ></label>
+                  <label class="checkbox"
+                    >Italian<input type="checkbox" name="languages" /><span
+                      class="check"></span
+                  ></label>
+                  <label class="checkbox"
+                    >German<input type="checkbox" name="languages" /><span
+                      class="check"></span
+                  ></label>
+                  <label class="checkbox"
+                    >Hindi<input type="checkbox" name="languages" /><span
+                      class="check"></span
+                  ></label>
+                  <label class="checkbox"
+                    >Arabic<input type="checkbox" name="languages" /><span
+                      class="check"></span
+                  ></label>
+                </div>
+                <div class="registration__preferences">
+                  <p>What is your travel preference?</p>
+                  <select>
                     <option value="beach">Beach vacations</option>
                     <option value="mountain">Mountain adventures</option>
                     <option value="city">City explorations</option>
                     <option value="adventure">Adventure travels</option>
                   </select>
-                </fieldset>
+                </div>
               </div>
               <button class="btn registration__btn">Submit</button>
             </form>

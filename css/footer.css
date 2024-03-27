@@ -1,5 +1,5 @@
 footer {
-  background-color: rgb(22, 35, 51);
+  background-color: var(--bg-color);
   height: 25rem;
   padding: 3rem 0;
   width: 100%;
@@ -23,7 +23,7 @@ footer {
   width: 100%;
 }
 .footer__icons > li a {
-  color: white;
+  color: var(--main-font-light);
   font-size: 2rem;
 }
 .footer__links {
@@ -31,7 +31,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--main-font-light);
   width: 100%;
   height: 100%;
 }
@@ -45,8 +45,8 @@ footer {
   gap: 2rem;
 }
 .footer__pages > li a {
-  color: white;
-  font-family: 'Inter Tight', sans-serif;
+  color: var(--main-font-light);
+  font-family: var(--main-font);
   font-size: 1rem;
   font-weight: 400;
 }

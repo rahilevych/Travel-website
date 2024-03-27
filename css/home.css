@@ -1,9 +1,8 @@
+@import './header.css';
 .trends {
-  background-color: rgba(22, 44, 61, 0.1);
   width: 100%;
   padding: 5rem 0;
 }
-
 .trends__container {
   display: flex;
   justify-content: center;
@@ -27,9 +26,10 @@
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  background-color: white;
+  background-color: var(--bg-items);
   padding-bottom: 2rem;
   width: min-content;
+  border: 2px solid var(--border-color);
 }
 .trends__item > :not(:first-child) {
   padding: 0 auto;
@@ -67,7 +67,7 @@
   font-size: 1.5rem;
 }
 .trends__price {
-  color: rgb(255, 202, 66);
+  color: var(--details-color);
 }
 @media only screen and (max-width: 1200px) {
   html {

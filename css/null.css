@@ -1,8 +1,19 @@
+:root {
+  --bg-color: #072938;
+  --bg-color-light: #fbfefe;
+  --main-font-light: white;
+  --main-font-dark: #072938;
+  --details-color: #182073;
+  --hover-color: #dbf4f9;
+  --border-color: #c7dee3;
+  --main-font: 'Inter', sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 16px;
 }
@@ -19,7 +30,7 @@ button {
   cursor: pointer;
 }
 .container {
-  width: 80%;
+  width: 70%;
   height: 100%;
   margin: 0 auto;
 }
