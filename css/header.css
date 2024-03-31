@@ -192,6 +192,7 @@ header {
     font-size: 3rem;
     text-align: center;
     width: 100%;
+    padding: 2rem 0;
   }
   .header__info p {
     text-align: center;
