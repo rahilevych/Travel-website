@@ -1,0 +1,25 @@
+@import './header.css';
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10rem 0;
+  gap: 2rem;
+}
+.confirmation__info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  align-self: flex-start;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+.confirmation__info p {
+  font-family: var(--main-font);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--bg-color);
+}
