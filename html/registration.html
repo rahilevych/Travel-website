@@ -83,7 +83,7 @@
         <div class="container">
           <section class="registration">
             <h2 class="title">Registration</h2>
-            <form action="" class="registration__form">
+            <form action="./confirmation.html" class="registration__form">
               <div class="registration__personal">
                 <div class="registration__item">
                   <label for="name">Name</label>
@@ -127,9 +127,9 @@
                     required
                     placeholder="Country" />
                 </div>
-                <div class="registration__item" required>
+                <div class="registration__item">
                   <label for="city">City</label>
-                  <input type="text" name="city" placeholder="City" />
+                  <input type="text" name="city" placeholder="City" required />
                 </div>
                 <div class="registration__item">
                   <label for="password">Password</label>
@@ -150,80 +150,112 @@
                 <div class="registration__countries">
                   <p>What countries do you prefer?</p>
                   <label class="checkbox"
-                    >European<input type="checkbox" name="countries" /><span
-                      class="check"></span
+                    >European<input
+                      type="checkbox"
+                      name="countries"
+                      value="European" /><span class="check"></span
                   ></label>
                   <label class="checkbox"
-                    >African<input type="checkbox" name="countries" /><span
-                      class="check"></span
+                    >African<input
+                      type="checkbox"
+                      name="countries"
+                      value="African" /><span class="check"></span
                   ></label>
                   <label class="checkbox"
-                    >Asian<input type="checkbox" name="countries" /><span
-                      class="check"></span
+                    >Asian<input
+                      type="checkbox"
+                      name="countries"
+                      value="Asian" /><span class="check"></span
                   ></label>
                   <label class="checkbox"
                     >South American<input
                       type="checkbox"
-                      name="countries" /><span class="check"></span
+                      name="countries"
+                      value="South American" />
+
+                    <span class="check"></span
                   ></label>
                   <label class="checkbox"
                     >North American<input
                       type="checkbox"
-                      name="countries" /><span class="check"></span
+                      name="countries"
+                      value="North American" />
+                    <span class="check"></span
                   ></label>
                   <label class="checkbox"
-                    >Oceanian<input type="checkbox" name="countries" /><span
-                      class="check"></span
+                    >Oceanian<input
+                      type="checkbox"
+                      name="countries"
+                      value="Oceanian" /><span class="check"></span
                   ></label>
                   <label class="checkbox"
                     >Middle Eastern<input
                       type="checkbox"
-                      name="countries" /><span class="check"></span
+                      name="countries"
+                      value="Middle Eastern" /><span class="check"></span
                   ></label>
                   <label class="checkbox"
-                    >Caribbean<input type="checkbox" name="countries" /><span
-                      class="check"></span
+                    >Caribbean<input
+                      type="checkbox"
+                      name="countries"
+                      value="Caribbean" /><span class="check"></span
                   ></label>
                   <label class="checkbox"
                     >Central American
-                    <input type="checkbox" name="countries" /><span
-                      class="check"></span
+                    <input
+                      type="checkbox"
+                      name="countries"
+                      value="Central American" /><span class="check"></span
                   ></label>
                 </div>
                 <div class="registration__languages">
                   <p>What languages do you do you speak?</p>
                   <label class="checkbox"
-                    >English<input type="checkbox" name="languages" /><span
-                      class="check"></span
+                    >English<input
+                      type="checkbox"
+                      name="languages"
+                      value="English" /><span class="check"></span
                   ></label>
                   <label class="checkbox"
-                    >Spanish<input type="checkbox" name="languages" /><span
-                      class="check"></span
+                    >Spanish<input
+                      type="checkbox"
+                      name="languages"
+                      value="Spanish" /><span class="check"></span
                   ></label>
                   <label class="checkbox"
-                    >French<input type="checkbox" name="languages" /><span
-                      class="check"></span
+                    >French<input
+                      type="checkbox"
+                      name="languages"
+                      value="French" /><span class="check"></span
                   ></label>
                   <label class="checkbox"
-                    >Italian<input type="checkbox" name="languages" /><span
-                      class="check"></span
+                    >Italian<input
+                      type="checkbox"
+                      name="languages"
+                      value="Italian" /><span class="check"></span
                   ></label>
                   <label class="checkbox"
-                    >German<input type="checkbox" name="languages" /><span
-                      class="check"></span
+                    >German<input
+                      type="checkbox"
+                      name="languages"
+                      value="German" /><span class="check"></span
                   ></label>
                   <label class="checkbox"
-                    >Hindi<input type="checkbox" name="languages" /><span
-                      class="check"></span
+                    >Hindi<input
+                      type="checkbox"
+                      name="languages"
+                      value="Hindi" /><span class="check"></span
                   ></label>
                   <label class="checkbox"
-                    >Arabic<input type="checkbox" name="languages" /><span
-                      class="check"></span
+                    >Arabic<input
+                      type="checkbox"
+                      name="languages"
+                      value="Arabic" /><span class="check"></span
                   ></label>
                 </div>
                 <div class="registration__preferences">
                   <p>What is your travel preference?</p>
-                  <select>
+                  <select id="preferences" name="preferences">
                     <option value="beach">Beach vacations</option>
                     <option value="mountain">Mountain adventures</option>
                     <option value="city">City explorations</option>
@@ -231,7 +263,9 @@
                   </select>
                 </div>
               </div>
-              <button class="btn registration__btn">Submit</button>
+              <button class="btn registration__btn" type="submit">
+                Submit
+              </button>
             </form>
           </section>
         </div>
@@ -278,5 +312,6 @@
         </div>
       </footer>
     </div>
+    <script src="../js/registration.js"></script>
   </body>
 </html>
