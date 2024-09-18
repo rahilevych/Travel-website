@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Получаем данные из URL
   const urlParams = new URLSearchParams(window.location.search);
   const userData = Object.fromEntries(urlParams.entries());
   dispData(userData);
@@ -8,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
 function dispData(userData) {
   const userInfoDiv = document.querySelector('.confirmation__info');
 
-  // Отображаем данные в div с классом "confirmation__info"
   userInfoDiv.innerHTML = `
       <p>Name:${userData.name}</p>
       <p>Surname:${userData.surname}</p>

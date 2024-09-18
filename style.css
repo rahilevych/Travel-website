@@ -1,9 +1,9 @@
-@import './contact.css';
-@import './registration.css';
-@import './confirmation.css';
-@import './content.css';
-@import './home.css';
-@import './footer.css';
+@import './css/contact.css';
+@import './css/registration.css';
+@import './css/confirmation.css';
+@import './css/content.css';
+@import './css/home.css';
+@import './css/footer.css';
 .title {
   position: relative;
   display: flex;
